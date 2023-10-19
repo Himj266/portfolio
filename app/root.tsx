@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import { HomePage } from '~/components/homePage';
 
 //types
 import type { LinksFunction } from '@remix-run/node';
@@ -26,24 +27,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="bg-slate-800">
-          <div className="flex">
-            <div className="h-screen border-r-2 border-gray-400 p-2">left</div>
-            <div className="flex h-screen grow flex-col p-2">
-              <div className="grow text-8xl font-black text-gray-100">
-                Canvas For Ideas To Paint
-              </div>
-              <div className="flex flex-col items-end text-right text-gray-200">
-                <div className="text-3xl">The Artist</div>
-                <div className="w-1/2 text-lg">
-                  Himanshu Jain, working as frontend developer at Sprinklr, tech
-                  enthusiast, who loves to play sport especially badminton,
-                  dance, learn new things and explore
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HomePage />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
