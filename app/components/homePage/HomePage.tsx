@@ -8,7 +8,9 @@ export const HomePage = (): JSX.Element => (
     <div className="flex">
       <Sidebar />
       <div className="flex h-screen grow flex-col p-2">
-        <Main />
+        <div className='grow'>
+          <Main />
+        </div>
         <Footer />
       </div>
     </div>
