@@ -10,7 +10,7 @@ interface Props extends Omit<FormControlProps, "children"> {
   className?: string;
 }
 
-export const TextInput = ({
+export const TextAreaInput = ({
   label,
   id,
   value,
@@ -18,11 +18,7 @@ export const TextInput = ({
 }: Props): JSX.Element => {
   return (
     <FormControl label={label} id={id}>
-      <input
-        type="text"
-        id={id}
-        className={`${INPUT_CLASSNAMES} ${className ?? ""}`}
-      />
+      <textarea id={id} className={`${INPUT_CLASSNAMES} ${className ?? ""}`} />
     </FormControl>
   );
 };

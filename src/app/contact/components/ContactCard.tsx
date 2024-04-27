@@ -12,7 +12,7 @@ export const ContactCard = (): JSX.Element => {
       <p className="text-4xl font-light text-gray-400">
         Get in touch with me via social media or email.
       </p>
-      <div className="pt-10">
+      <div className="pt-16">
         <ul className="grid grid-cols-2 gap-10">
           {SOCIAL_PROFILES.map(({ url, label }) => (
             <li key={url}>
