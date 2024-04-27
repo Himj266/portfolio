@@ -8,10 +8,25 @@ export const EmailForm = (): JSX.Element => {
         <form>
           <div className="flex">
             <div className="flex flex-col gap-10">
-              <TextInput label="Name" id="name" />
-              <TextInput label="Email" id="email" />
+              <TextInput
+                label="Name"
+                id="name"
+                value={undefined}
+                onChange={() => {}}
+              />
+              <TextInput
+                label="Email"
+                id="email"
+                value={undefined}
+                onChange={() => {}}
+              />
             </div>
-            <TextInput label="Message" id="message" />
+            <TextInput
+              label="Message"
+              id="message"
+              value={undefined}
+              onChange={() => {}}
+            />
           </div>
         </form>
       </div>

@@ -1,7 +1,7 @@
 //components
 import { FormControl, Props as FormControlProps } from "./FormControl";
 
-interface Props extends FormControlProps {
+interface Props extends Omit<FormControlProps, "children"> {
   value: string | undefined;
   onChange: (value: string) => void;
 }
