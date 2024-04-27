@@ -1,14 +1,12 @@
 //components
-import { Image } from "./components/Image";
+import { ImageCard } from "./components/ImageCard";
 import { ContactCard } from "./components/ContactCard";
 
 export default function Contact() {
   return (
-    <div className="flex w-full justify-around pt-32 px-20 gap-10 shadow border-solid">
-      <div className="pb-10">
-        <ContactCard />
-      </div>
-      <Image />
+    <div className="flex w-full justify-around py-16 px-20 gap-5 shadow border-solid">
+      <ContactCard />
+      <ImageCard />
     </div>
   );
 }
