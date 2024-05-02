@@ -5,6 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 const NAV_ITEMS = [
   { title: "Home", src: "/home" },
+  { title: "About", src: "/about" },
   { title: "Contact", src: "/contact" },
 ];
 
