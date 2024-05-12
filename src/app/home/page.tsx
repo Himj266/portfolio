@@ -1,3 +1,33 @@
-export default function Home() {
-  return <div>home</div>;
-}
+//components
+import { DescriptionCard } from "@/core/components/heroSection/DescriptionCard";
+import { HeroSectionLayout } from "@/core/components/heroSection/HeroSectionLayout";
+import { ImageCard } from "@/core/components/heroSection/ImageCard";
+import { RandomFacts } from "./components/RandomFacts";
+
+const Home = (): JSX.Element => {
+  const descriptionJSX = (
+    <div className="text-2xl text-gray-500">
+      I&apos;ve alwasy enjoyed how people can turn machines do amazing stuff and
+      love trying to do so. When I&apos;m not with the laptop, you can find me
+      playing badminton or cruising on a bike
+    </div>
+  );
+
+  return (
+    <div className="flex flex-col">
+      <HeroSectionLayout>
+        <div className="w-full flex justify-between pt-16">
+          <DescriptionCard
+            title="about."
+            subTitle="I'm a frontend developer based in incredible India"
+            description={descriptionJSX}
+          />
+          <ImageCard src="./developer.svg" altText="About Me" />
+        </div>
+      </HeroSectionLayout>
+      <RandomFacts />
+    </div>
+  );
+};
+
+export default Home;
