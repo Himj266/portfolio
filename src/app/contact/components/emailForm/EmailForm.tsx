@@ -1,9 +1,12 @@
 import { FormBody } from "./FormBody";
+import { Typography } from "@/core/components/atomic/Typography";
 
 export const EmailForm = (): JSX.Element => {
   return (
     <div className="w-full">
-      <h2 className="text-5xl font-light text-gray-700">Send me an email</h2>
+      <Typography $as="h2" variant="subHeading">
+        Send me an email
+      </Typography>
       <div className="flex flex-col gap-10 pt-14">
         <FormBody />
         <div className="flex justify-end self-end">

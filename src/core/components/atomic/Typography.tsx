@@ -2,7 +2,7 @@ import { createElement } from "react";
 
 interface Props {
   className?: string;
-  variant: "normalBody";
+  variant: "normalBody" | "subHeading";
   children: string;
   $as?: string;
 }
@@ -19,6 +19,9 @@ export const Typography = ({
   switch (variant) {
     case "normalBody":
       variantClassNames = "text-2xl text-gray-500";
+      break;
+    case "subHeading":
+      variantClassNames = "text-5xl font-light text-gray-700";
       break;
     default:
       break;

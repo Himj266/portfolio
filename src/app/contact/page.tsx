@@ -3,6 +3,7 @@ import { ImageCard } from "../../core/components/heroSection/ImageCard";
 import { ContactCard } from "./components/ContactCard";
 import { EmailForm } from "./components/emailForm";
 import { HeroSectionLayout } from "@/core/components/heroSection/HeroSectionLayout";
+import { SectionCard } from "@/core/SectionCard";
 
 export default function Contact() {
   return (
@@ -16,9 +17,9 @@ export default function Contact() {
         </div>
       </HeroSectionLayout>
       <div className="w-full flex justify-center px-20 py-24">
-        <div className="w-full" style={{ maxWidth: "1024px" }}>
+        <SectionCard>
           <EmailForm />
-        </div>
+        </SectionCard>
       </div>
     </div>
   );

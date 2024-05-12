@@ -11,7 +11,8 @@ const NAV_ITEMS = [
 export const Navbar = () => {
   return (
     <header className="bg-slate-950 px-20">
-      <div className="flex">
+      <div className="flex justify-between">
+        <div></div>
         <nav>
           <ul className="flex gap-10 items-center">
             {NAV_ITEMS.map(({ src, title }) => (
