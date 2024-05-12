@@ -3,14 +3,15 @@ import { DescriptionCard } from "@/core/components/heroSection/DescriptionCard";
 import { HeroSectionLayout } from "@/core/components/heroSection/HeroSectionLayout";
 import { ImageCard } from "@/core/components/heroSection/ImageCard";
 import { RandomFacts } from "./components/RandomFacts";
+import { Typography } from "@/core/components/atomic/Typography";
 
 const Home = (): JSX.Element => {
   const descriptionJSX = (
-    <div className="text-2xl text-gray-500">
+    <Typography variant="normalBody" $as="p">
       I&apos;ve alwasy enjoyed how people can turn machines do amazing stuff and
       love trying to do so. When I&apos;m not with the laptop, you can find me
       playing badminton or cruising on a bike
-    </div>
+    </Typography>
   );
 
   return (
