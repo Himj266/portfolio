@@ -5,6 +5,8 @@ import { SectionCard } from "@/core/SectionCard";
 const FACTS = [
   "I love to play badminton",
   " I watch a lot of content (anime/movies/series/tuotrials)",
+  "I am currently into calisthenics",
+  "I like playing games, currently burning my fingers in valorant",
   "I want to travel every country",
   "I like to explore/learn every new thing there is.",
 ];
