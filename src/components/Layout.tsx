@@ -7,7 +7,7 @@ import type { ReactNode } from "react";
 export const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
   return (
     <div className="flex flex-col">
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-20">
         <Navbar />
       </div>
       {children}
