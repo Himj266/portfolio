@@ -17,14 +17,12 @@ const Home = (): JSX.Element => {
   return (
     <div className="flex flex-col">
       <HeroSectionLayout>
-        <div className="w-full flex justify-between pt-16">
-          <DescriptionCard
-            title="about."
-            subTitle="I'm a frontend developer based in incredible India"
-            description={descriptionJSX}
-          />
-          <ImageCard src="./developer.svg" altText="About Me" />
-        </div>
+        <DescriptionCard
+          title="about."
+          subTitle="I'm a frontend developer based in incredible India"
+          description={descriptionJSX}
+        />
+        <ImageCard src="./developer.svg" altText="About Me" />
       </HeroSectionLayout>
       <RandomFacts />
     </div>

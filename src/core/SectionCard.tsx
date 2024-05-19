@@ -1,6 +1,8 @@
 //types
 import type { ReactNode } from "react";
 
+const CLASSNAMES = 'w-full flex flex-col sm:flex-row items-center justify-between gap-5'
+
 export const SectionCard = ({
   className,
   children,
@@ -9,8 +11,8 @@ export const SectionCard = ({
   children: ReactNode;
 }): JSX.Element => (
   <div
-    className={className ? `w-full ${className}` : "w-full"}
-    style={{ width: "91.2rem" }}
+    className={className ? `${CLASSNAMES} ${className}` : CLASSNAMES}
+    style={{ maxWidth: "91.2rem" }}
   >
     {children}
   </div>

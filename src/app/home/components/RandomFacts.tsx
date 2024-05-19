@@ -14,7 +14,7 @@ const FACTS = [
 export const RandomFacts = () => {
   return (
     <div className="w-full px-20 flex items-center justify-center ga-5 border-b border-gray-800 py-24">
-      <SectionCard className="w-full flex justify-between items-center">
+      <SectionCard >
         <Image
           src="./randomFacts.svg"
           alt="random Facts Image"

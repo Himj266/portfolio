@@ -9,12 +9,10 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center">
       <HeroSectionLayout>
-        <div className="w-full flex items-center justify-between">
           <ContactCard />
           <div className="pt-16">
             <ImageCard src="./contact.svg" altText="contact image" />
           </div>
-        </div>
       </HeroSectionLayout>
       <div className="w-full flex justify-center px-20 py-24">
         <SectionCard>
