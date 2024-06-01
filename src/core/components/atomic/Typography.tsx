@@ -1,9 +1,9 @@
-import { createElement } from "react";
+import { ReactNode, createElement } from "react";
 
 interface Props {
   className?: string;
-  variant: "normalBody" | "subHeading";
-  children: string;
+  variant: "normalBody" | "subHeading" | "text-3";
+  children: string | ReactNode;
   $as?: string;
 }
 
@@ -19,6 +19,9 @@ export const Typography = ({
   switch (variant) {
     case "normalBody":
       variantClassNames = "text-2xl text-gray-500";
+      break;
+    case "text-3":
+      variantClassNames = "text-3xl";
       break;
     case "subHeading":
       variantClassNames = "text-5xl font-light text-gray-700";
