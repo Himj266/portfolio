@@ -1,3 +1,5 @@
+"use client";
+
 //components
 import { SmallScreenNavbar } from "./components/SmallScreenNavbar";
 import { WideScreenNavbar } from "./components/WideScreenNavbar";
