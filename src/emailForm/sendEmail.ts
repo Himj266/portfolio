@@ -1,4 +1,4 @@
-import { mailjet } from "@/emailForm/mailjet";
+import nodemailer from "nodemailer";
 
 export const sendEmail = async ({
   name,
@@ -9,23 +9,22 @@ export const sendEmail = async ({
   email: string;
   message: string;
 }) => {
-  const request = await mailjet.post("send", { version: "v3.1" }).request({
-    Messages: [
-      {
-        From: {
-          Email: email,
-          Name: name,
-        },
-        To: {
-          Email: process.env.PERSONAL_EMAIL,
-          Name: "Himanshu Jain",
-        },
-        Subject: `${name} want to contact from your portfolio`,
-        TextPart: message,
-        HTMLPart: message,
-      },
-    ],
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.PERSONAL_EMAIL,
+      pass: process.env.PERSONAL_EMAIL_PASS,
+    },
   });
 
-  return request;
+  const mailOptions = {
+    from: process.env.PERSONAL_EMAIL,
+    to: process.env.TARGET_PERSONAL_EMAIL,
+    subject: "Email from your portfolio",
+    text: `${name} from ${email} sent you a email \n${message}`,
+  };
+
+  const response = await transporter.sendMail(mailOptions);
+
+  return response;
 };

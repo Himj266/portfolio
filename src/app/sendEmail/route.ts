@@ -5,7 +5,7 @@ export async function POST(req: Request) {
   const { name, email, message } = reqBody;
 
   try {
-    const response = await sendEmail({ name, email, message });
+    await sendEmail({ name, email, message });
 
     return new Response(JSON.stringify({ sucess: "ok" }), {
       status: 200,
