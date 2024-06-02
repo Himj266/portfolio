@@ -18,11 +18,11 @@ export const EmailForm = (): JSX.Element => {
     async (e: FormEvent) => {
       e.preventDefault();
       try {
-        const res = await fetch("/api/sendEmail", {
+        const res = await fetch("/sendEmail", {
           method: "POST",
           body: JSON.stringify(values),
           headers: {
-            "content-type": "application/json",
+            "Content-Type": "application/json",
           },
         });
       } catch (e) {
