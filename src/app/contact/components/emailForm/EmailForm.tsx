@@ -1,9 +1,10 @@
 "use client";
-import { FormEvent, useCallback } from "react";
+import { FormEvent, useCallback, useState } from "react";
 
 //comps
 import { FormBody } from "./FormBody";
 import { Typography } from "@/core/components/atomic/Typography";
+import { Snackbar } from "@/core/components/Snackbar";
 
 //hooks
 import { useForm } from "@/core/hooks/useForm";
@@ -13,6 +14,7 @@ import { EmailFormValues } from "@/emailForm/types";
 
 export const EmailForm = (): JSX.Element => {
   const { values, onAction } = useForm<EmailFormValues>();
+  const [snackbarText, setSnackbarText] = useState<string | undefined>();
 
   const onSubmit = useCallback(
     async (e: FormEvent) => {
@@ -25,8 +27,14 @@ export const EmailForm = (): JSX.Element => {
             "Content-Type": "application/json",
           },
         });
+
+        if (res.status === 200) {
+          setSnackbarText("Email Sent Sucessfully. Thanks for contacting!!");
+        } else {
+          setSnackbarText("Failed to Send the Email. Please try again!!");
+        }
       } catch (e) {
-        console.log(e);
+        setSnackbarText("Failed to Send the Email. Please try again!!");
       }
     },
     [values]
@@ -48,6 +56,9 @@ export const EmailForm = (): JSX.Element => {
           </button>
         </div>
       </div>
+      {snackbarText ? (
+        <Snackbar message={snackbarText} setSnackbarText={setSnackbarText} />
+      ) : null}
     </div>
   );
 };
