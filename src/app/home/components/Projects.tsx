@@ -40,7 +40,7 @@ export const Projects = () => {
                       alt={project.name}
                       height="200"
                       width="200"
-                      className="rounded-lg h-[200px] w-[200px] object-cover"
+                      className="rounded-2xl h-[200px] w-[200px] object-cover"
                     />
                     <figcaption className="absolute opacity-0 group-hover:opacity-100">
                       <Typography

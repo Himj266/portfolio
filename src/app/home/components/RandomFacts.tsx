@@ -3,12 +3,12 @@ import Image from "next/image";
 import { SectionCard } from "@/core/SectionCard";
 
 const FACTS = [
-  "I love to play badminton",
-  " I watch a lot of content (anime/movies/series/tuotrials)",
-  "I am currently into calisthenics",
-  "I like playing games, currently burning my fingers in valorant",
-  "I want to travel every country",
-  "I like to explore/learn every new thing there is.",
+  "I'm into calisthenics and love bodyweight workouts.",
+  "I'm always keen to learn and try new rope jumping tricks.",
+  "I enjoy playing badminton whenever I get the chance",
+  "I love diving into philosophy, mythology, and history",
+  "My favorite book is 'Sapiens' by Yuval Noah Harari",
+  "I like exploring and learning something new every day.",
 ];
 
 export const RandomFacts = () => {
