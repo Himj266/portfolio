@@ -13,8 +13,8 @@ const FACTS = [
 
 export const RandomFacts = () => {
   return (
-    <div className="w-full px-20 flex items-center justify-center ga-5 border-b border-gray-800 py-24">
-      <SectionCard >
+    <div className="w-full px-20 flex items-center justify-center ga-5 py-24 shadow">
+      <SectionCard>
         <Image
           src="./randomFacts.svg"
           alt="random Facts Image"
@@ -22,7 +22,7 @@ export const RandomFacts = () => {
           width={300}
         />
         <div className="flex flex-col gap-7">
-          <Typography variant="subHeading" $as="h2">
+          <Typography variant="text-7" $as="h2">
             Random Facts
           </Typography>
           <ul className="flex flex-col gap-3">

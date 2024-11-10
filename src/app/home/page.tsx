@@ -4,13 +4,14 @@ import { HeroSectionLayout } from "@/core/components/heroSection/HeroSectionLayo
 import { ImageCard } from "@/core/components/heroSection/ImageCard";
 import { RandomFacts } from "./components/RandomFacts";
 import { Typography } from "@/core/components/atomic/Typography";
+import { Projects } from "./components/Projects";
 
 const Home = (): JSX.Element => {
   const descriptionJSX = (
     <Typography variant="normalBody" $as="p">
-      I&apos;ve alwasy enjoyed how people can turn machines do amazing stuff and
-      love trying to do so. When I&apos;m not with the laptop, you can find me
-      playing badminton or cruising on a bike
+      I&apos;ve always enjoyed how people can turn machines do amazing stuff and
+      love trying to do so. When I&apos;m not in front of screen, you can find
+      me trying calisthenics or playing badminton or cruising on a bike
     </Typography>
   );
 
@@ -25,6 +26,7 @@ const Home = (): JSX.Element => {
         <ImageCard src="./developer.svg" altText="About Me" />
       </HeroSectionLayout>
       <RandomFacts />
+      <Projects />
     </div>
   );
 };
