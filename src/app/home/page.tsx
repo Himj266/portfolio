@@ -5,6 +5,7 @@ import { ImageCard } from "@/core/components/heroSection/ImageCard";
 import { RandomFacts } from "./components/RandomFacts";
 import { Typography } from "@/core/components/atomic/Typography";
 import { Projects } from "./components/Projects";
+import { Blogs } from "./components/Blogs";
 
 const Home = (): JSX.Element => {
   const descriptionJSX = (
@@ -27,6 +28,7 @@ const Home = (): JSX.Element => {
       </HeroSectionLayout>
       <RandomFacts />
       <Projects />
+      <Blogs />
     </div>
   );
 };

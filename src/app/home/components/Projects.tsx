@@ -21,7 +21,7 @@ const PROJECTS_LIST = [
 
 export const Projects = () => {
   return (
-    <div className="w-full px-20 flex items-center justify-center ga-5 border-b border-gray-800 py-24 shadow border-solid">
+    <div className="w-full px-20 flex items-center justify-center ga-5 border-gray-800 py-24 shadow border-solid">
       <SectionCard>
         <div className="flex flex-col gap-7">
           <Typography variant="text-7">Projects</Typography>
