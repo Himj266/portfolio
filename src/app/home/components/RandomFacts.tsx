@@ -23,7 +23,7 @@ export const RandomFacts = () => {
         />
         <div className="flex flex-col gap-7">
           <Typography variant="text-7" $as="h2">
-            Random Facts
+            random Facts
           </Typography>
           <ul className="flex flex-col gap-3">
             {FACTS.map((fact, index) => (

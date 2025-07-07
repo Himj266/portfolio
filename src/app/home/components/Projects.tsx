@@ -24,7 +24,7 @@ export const Projects = () => {
     <div className="w-full px-20 flex items-center justify-center ga-5 border-gray-800 py-24 shadow border-solid">
       <SectionCard>
         <div className="flex flex-col gap-7">
-          <Typography variant="text-7">Projects</Typography>
+          <Typography variant="text-7">projects</Typography>
           <ul className="grid grid-cols-2 gap-10">
             {PROJECTS_LIST.map((project) => (
               <li key={project.id}>
